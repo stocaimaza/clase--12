@@ -1,0 +1,126 @@
+.tamLogo {
+    width: 90px;
+}
+
+.colorNavbar {
+    background-color: #f5cba7;
+}
+
+.fuentes {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*  MODAL  */
+
+.colorBoton {
+    background-color: aquamarine;
+}
+
+/* MEDIAS QUERIES */
+
+.titMedias {
+    color:red;
+}
+
+.texto {
+    color:blue;
+}
+
+@media (max-width:600px) {
+    .titMedias {
+        color:green;
+    }
+
+    .texto {
+        color:yellow;
+    }
+}
+
+/*VISTA TABLET*/
+
+@media (min-width:601px) and (max-width:900px) {
+    .titMedias {
+        color: violet;
+    }
+
+    .texto {
+        color: beige;
+    }
+}
+
+/*IMPRIMIR*/
+
+@media print and (min-width:300px) and (orientation:landscape) {
+    .titMedias {
+        color: black;
+    }
+
+    .texto {
+        color: black;
+    }
+}
+
+/*PRINT: se utiliza para impresoras*/
+
+/*SCREEN: se utiliza para pantallas*/
+
+/*ALL : se utiliza para todos los tipos de medios o
+dispositivos*/
+
+/*PSEUDOCLASES Y PSEUDOELEMENTOS*/
+
+.parrafoConHover {
+    color: red;
+    font-size: 40px;
+}
+
+.parrafoConHover:hover {
+    color:blue;
+}
+
+/*  NTH-CHILD() */
+
+/* .contenedor p:nth-child(3){
+    color:aqua;
+} */
+
+/* NOT */
+
+.contenedor p:not(.horarios) {
+    color: green;
+    font-size: 35px;
+}
+
+/* LINK Y VISITED */
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: black;
+}
+
+/* FOCUS */
+
+input:focus {
+    background-color: aquamarine;
+}
+
+/* PSEUDOELEMENTOS */
+
+h3::first-letter {
+    text-transform: uppercase;
+    color: red;
+}
+
+h3::before {
+    content: "Hoy vemos ";
+}
+
+h3::after {
+    content:" y tambien instalamos NODE";
+}
